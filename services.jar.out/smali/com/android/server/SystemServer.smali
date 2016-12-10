@@ -160,14 +160,14 @@
     .param p0, "args"    # [Ljava/lang/String;
 
     .prologue
-    .line 171
+    invoke-static {}, Lmiui/patchrom/ClassHook;->initServerHook()V
+
     new-instance v0, Lcom/android/server/SystemServer;
 
     invoke-direct {v0}, Lcom/android/server/SystemServer;-><init>()V
 
     invoke-direct {v0}, Lcom/android/server/SystemServer;->run()V
 
-    .line 170
     return-void
 .end method
 
