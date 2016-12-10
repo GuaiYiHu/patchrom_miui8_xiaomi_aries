@@ -1984,7 +1984,7 @@ system/xbin/stat 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/strace 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/strings 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/stty 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
-system/xbin/su 0 2000 4755 selabel=u:object_r:su_exec:s0 capabilities=0x0
+system/xbin/su 0 2000 6755 selabel=u:object_r:su_exec:s0 capabilities=0x0
 system/xbin/sum 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/swapoff 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/xbin/swapon 0 2000 755 selabel=u:object_r:system_file:s0 capabilities=0x0
