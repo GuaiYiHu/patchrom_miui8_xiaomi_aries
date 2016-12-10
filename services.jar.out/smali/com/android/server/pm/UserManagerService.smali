@@ -786,7 +786,7 @@
 .end method
 
 .method private createUserInternal(Ljava/lang/String;II)Landroid/content/pm/UserInfo;
-    .locals 30
+    .locals 37
     .param p1, "name"    # Ljava/lang/String;
     .param p2, "flags"    # I
     .param p3, "parentId"    # I
@@ -10148,4 +10148,33 @@
     .end local v0    # "e":Landroid/os/RemoteException;
     :cond_4
     return-void
+.end method
+
+.method private checkAndGetNewUserId(IZ)I
+    .locals 7
+    .param p1, "flags"    # I
+    .param p2, "isAirlockUser"    # Z
+
+    .prologue
+    invoke-direct {p0}, Lcom/android/server/pm/UserManagerService;->getNextAvailableIdLocked()I
+
+    move-result v2
+
+    iget-object v4, p0, Lcom/android/server/pm/UserManagerService;->mPackagesLock:Ljava/lang/Object;
+
+    iget-object v5, p0, Lcom/android/server/pm/UserManagerService;->mUsers:Landroid/util/SparseArray;
+
+    iget-object v6, p0, Lcom/android/server/pm/UserManagerService;->mRemovingUserIds:Landroid/util/SparseBooleanArray;
+
+    move-object v0, p0
+
+    move v1, p1
+
+    move v3, p2
+
+    invoke-static/range {v0 .. v6}, Lcom/android/server/pm/UserManagerServiceInjector;->checkAndGetNewUserId(Lcom/android/server/pm/UserManagerService;IIZLjava/lang/Object;Landroid/util/SparseArray;Landroid/util/SparseBooleanArray;)I
+
+    move-result v0
+
+    return v0
 .end method
