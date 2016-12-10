@@ -1,0 +1,6 @@
+/cache	ext4	/dev/block/platform/msm_sdcc.1/by-name/cache
+/system	ext4	/dev/block/platform/msm_sdcc.1/by-name/system
+/data	ext4	/dev/block/platform/msm_sdcc.1/by-name/userdata
+/boot	emmc	/dev/block/platform/msm_sdcc.1/by-name/boot
+/recovery	emmc	/dev/block/platform/msm_sdcc.1/by-name/recovery
+/usb_storage	vfat	/dev/block/sda1
