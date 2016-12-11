@@ -53501,8 +53501,6 @@
     move-result-object v0
 
     invoke-static {v6, p2, v0, p3}, Landroid/content/pm/PackageParser;->generateApplicationInfo(Landroid/content/pm/PackageParser$Package;ILandroid/content/pm/PackageUserState;I)Landroid/content/pm/ApplicationInfo;
-    :try_end_1
-    .catchall {:try_start_1 .. :try_end_1} :catchall_0
 
     move-result-object v0
     
@@ -53521,6 +53519,8 @@
     move-result-object v0
     
     :cond_miui_2
+    :try_end_1
+    .catchall {:try_start_1 .. :try_end_1} :catchall_0
     monitor-exit v1
 
     return-object v0
@@ -55220,8 +55220,6 @@
     if-eqz v6, :cond_1
 
     invoke-virtual {p0, v6, p2, p3}, Lcom/android/server/pm/PackageManagerService;->generatePackageInfo(Landroid/content/pm/PackageParser$Package;II)Landroid/content/pm/PackageInfo;
-    :try_end_0
-    .catchall {:try_start_0 .. :try_end_0} :catchall_0
 
     move-result-object v0
 
@@ -55240,6 +55238,8 @@
     move-result-object v0
 
     :cond_miui_1
+    :try_end_0
+    .catchall {:try_start_0 .. :try_end_0} :catchall_0
     monitor-exit v1
 
     return-object v0
