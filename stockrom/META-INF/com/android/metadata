@@ -1,0 +1,3 @@
+post-build=Xiaomi/aries/aries:6.0.1/MMB29M/6.3.22:userdebug/test-keys
+post-timestamp=1458552531
+pre-device=aries
