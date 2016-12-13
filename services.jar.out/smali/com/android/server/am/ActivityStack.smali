@@ -4662,6 +4662,7 @@
 
     invoke-interface {v3, v4, v5, v6, v0}, Landroid/app/IApplicationThread;->scheduleResumeActivity(Landroid/os/IBinder;IZLandroid/os/Bundle;)V
 
+    invoke-static/range {v4 .. v4}, Lcom/android/server/am/PreventRunningUtils;->onResumeActivity(Landroid/os/IBinder;)V
     .line 1974
     move-object/from16 v0, p0
 
@@ -6719,6 +6720,7 @@
 
     .line 3406
     invoke-interface {v5, v6, v7, v8}, Landroid/app/IApplicationThread;->scheduleDestroyActivity(Landroid/os/IBinder;ZI)V
+    invoke-static/range {v6 .. v6}, Lcom/android/server/am/PreventRunningUtils;->onDestroyActivity(Landroid/os/IBinder;)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 
@@ -16902,6 +16904,7 @@
 
     .line 883
     invoke-interface/range {v2 .. v7}, Landroid/app/IApplicationThread;->schedulePauseActivity(Landroid/os/IBinder;ZZIZ)V
+    invoke-static/range {v3 .. v5}, Lcom/android/server/am/PreventRunningUtils;->onUserLeavingActivity(Landroid/os/IBinder;ZZ)V
     :try_end_0
     .catch Ljava/lang/Exception; {:try_start_0 .. :try_end_0} :catch_0
 

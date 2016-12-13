@@ -9469,6 +9469,7 @@
     .line 1312
     invoke-interface/range {v4 .. v21}, Landroid/app/IApplicationThread;->scheduleLaunchActivity(Landroid/content/Intent;Landroid/os/IBinder;ILandroid/content/pm/ActivityInfo;Landroid/content/res/Configuration;Landroid/content/res/Configuration;Landroid/content/res/CompatibilityInfo;Ljava/lang/String;Lcom/android/internal/app/IVoiceInteractor;ILandroid/os/Bundle;Landroid/os/PersistableBundle;Ljava/util/List;Ljava/util/List;ZZLandroid/app/ProfilerInfo;)V
 
+    invoke-static/range {v6 .. v6}, Lcom/android/server/am/PreventRunningUtils;->onLaunchActivity(Landroid/os/IBinder;)V
     .line 1318
     move-object/from16 v0, p2
 

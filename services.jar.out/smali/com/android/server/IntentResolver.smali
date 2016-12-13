@@ -342,7 +342,7 @@
 
     .line 695
     .local v19, "packageName":Ljava/lang/String;
-    invoke-virtual/range {p1 .. p1}, Landroid/content/Intent;->isExcludingStopped()Z
+    invoke-static/range {p1 .. p1}, Lcom/android/server/am/PreventRunningUtils;->isExcludingStopped(Landroid/content/Intent;)Z
 
     move-result v12
 
@@ -659,7 +659,7 @@
 
     move-object/from16 v8, p2
 
-    invoke-virtual/range {v3 .. v9}, Landroid/content/IntentFilter;->match(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I
+    invoke-static/range {v3 .. v9}, Lcom/android/server/am/PreventRunningUtils;->match(Landroid/content/IntentFilter;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Landroid/net/Uri;Ljava/util/Set;Ljava/lang/String;)I
 
     move-result v17
 
