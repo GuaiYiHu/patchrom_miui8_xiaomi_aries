@@ -8,7 +8,7 @@ local-zip-file     := stockrom.zip
 # All vendor apks needed
 local-miui-removed-apps := FM
 local-miui-modified-apps := TeleService InCallUI SecurityCenter
-local-phone-apps := PrintSpooler PacProcessor CertInstaller KeyChain SnapdragonCamera\
+local-phone-apps := PrintSpooler PacProcessor CertInstaller KeyChain\
 	Stk TimeService UserDictionaryProvider Bluetooth BluetoothMidiService telresources webview\
 
 local-phone-priv-apps :=AudioFX Shell FusedLocation ProxyHandler ExternalStorageProvider FMRadio\
