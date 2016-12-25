@@ -52,6 +52,16 @@ system/app/Gallery2/lib/arm 0 0 755 selabel=u:object_r:system_file:s0 capabiliti
 system/app/Gallery2/lib/arm/libjni_eglfence.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Gallery2/lib/arm/libjni_filtershow_filters.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Gallery2/lib/arm/libjni_jpegstream.so 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai1 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai1/guai1.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai2 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai2/guai2.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai3 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai3/guai3.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai4 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai4/guai4.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai5 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/guai5/guai5.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/HTMLViewer 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/HTMLViewer/HTMLViewer.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/HoloSpiralWallpaper 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
@@ -97,6 +107,8 @@ system/app/SnapdragonCamera 0 0 755 selabel=u:object_r:system_file:s0 capabiliti
 system/app/SnapdragonCamera/SnapdragonCamera.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/SoundRecorder 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/SoundRecorder/SoundRecorder.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/sta 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/sta/sta.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Stk 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Stk/Stk.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/Superuser 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
