@@ -59,7 +59,7 @@
 
 .field private mNinePatchInsets:Landroid/graphics/NinePatch$InsetStruct;
 
-.field private mRecycled:Z
+.field public mRecycled:Z
 
 .field private mRequestPremultiplied:Z
 

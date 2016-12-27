@@ -280,7 +280,7 @@
     .line 59
     .end local v1    # "fullLen":I
     :cond_1
-    new-instance v2, Landroid/content/res/TypedArray;
+    new-instance v2, Landroid/content/res/MiuiTypedArray;
 
     .line 60
     mul-int/lit8 v3, p1, 0x6
@@ -293,7 +293,7 @@
     new-array v4, v4, [I
 
     .line 59
-    invoke-direct {v2, p0, v3, v4, p1}, Landroid/content/res/TypedArray;-><init>(Landroid/content/res/Resources;[I[II)V
+    invoke-direct {v2, p0, v3, v4, p1}, Landroid/content/res/MiuiTypedArray;-><init>(Landroid/content/res/Resources;[I[II)V
 
     return-object v2
 .end method
