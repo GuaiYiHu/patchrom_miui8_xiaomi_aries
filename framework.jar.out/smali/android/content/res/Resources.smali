@@ -903,9 +903,13 @@
     .line 2091
     invoke-static {v0}, Landroid/content/pm/ActivityInfo;->activityInfoConfigToNative(I)I
 
-    move-result v0
+    move-result v2
 
-    .line 2093
+    const/high16 v3, -0x80000000
+
+    and-int/2addr v3, v0
+
+    or-int v0, v2, v3
     .end local v1    # "density":I
     :cond_2
     return v0

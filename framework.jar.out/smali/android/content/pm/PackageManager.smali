@@ -1396,7 +1396,7 @@
     .line 2628
     new-instance v1, Ljava/lang/NullPointerException;
 
-    const-string/jumbo v2, "permission cannot be null or empty"
+    const-string v2, "permission cannot be null or empty"
 
     invoke-direct {v1, v2}, Ljava/lang/NullPointerException;-><init>(Ljava/lang/String;)V
 
@@ -1406,18 +1406,18 @@
     :cond_0
     new-instance v0, Landroid/content/Intent;
 
-    const-string/jumbo v1, "android.content.pm.action.REQUEST_PERMISSIONS"
+    const-string v1, "android.content.pm.action.REQUEST_PERMISSIONS"
 
     invoke-direct {v0, v1}, Landroid/content/Intent;-><init>(Ljava/lang/String;)V
 
     .line 2631
     .local v0, "intent":Landroid/content/Intent;
-    const-string/jumbo v1, "android.content.pm.extra.REQUEST_PERMISSIONS_NAMES"
+    const-string v1, "android.content.pm.extra.REQUEST_PERMISSIONS_NAMES"
 
     invoke-virtual {v0, v1, p1}, Landroid/content/Intent;->putExtra(Ljava/lang/String;[Ljava/lang/String;)Landroid/content/Intent;
 
     .line 2632
-    invoke-virtual {p0}, Landroid/content/pm/PackageManager;->getPermissionControllerPackageName()Ljava/lang/String;
+    invoke-static {}, Landroid/content/pm/PackageManagerInjector;->getPermissionControllerPackageName()Ljava/lang/String;
 
     move-result-object v1
 

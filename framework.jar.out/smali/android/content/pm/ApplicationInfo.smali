@@ -813,13 +813,18 @@
     iput v0, p0, Landroid/content/pm/ApplicationInfo;->fullBackupContent:I
 
     .line 862
+    invoke-virtual {p1}, Landroid/os/Parcel;->readInt()I
+
+    move-result v0
+
+    iput v0, p0, Landroid/content/pm/ApplicationInfo;->nextActivityTheme:I
     return-void
 
     :cond_0
     move v0, v2
 
     .line 885
-    goto :goto_0
+    goto/16 :goto_0
 
     :cond_1
     move v1, v2
@@ -2417,6 +2422,9 @@
     invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
 
     .line 809
+    iget v0, p0, Landroid/content/pm/ApplicationInfo;->nextActivityTheme:I
+
+    invoke-virtual {p1, v0}, Landroid/os/Parcel;->writeInt(I)V
     return-void
 
     :cond_0

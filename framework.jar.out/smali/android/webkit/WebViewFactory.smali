@@ -776,7 +776,6 @@
 
     .line 150
     :cond_0
-    :try_start_1
     const-string v4, "com.android.thememanager"
 
     invoke-static {}, Landroid/app/ActivityThread;->currentProcessName()Ljava/lang/String;
@@ -788,6 +787,7 @@
     move-result v4
 
     if-nez v4, :cond_2
+    :try_start_1
     invoke-static {}, Landroid/os/Process;->myUid()I
 
     move-result v3
