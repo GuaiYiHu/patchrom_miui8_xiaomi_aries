@@ -9,7 +9,7 @@ local-zip-file     := stockrom.zip
 local-miui-removed-apps := FM
 local-miui-modified-apps := TeleService InCallUI
 local-phone-apps := PrintSpooler PacProcessor CertInstaller KeyChain\
-	Stk TimeService UserDictionaryProvider Bluetooth BluetoothMidiService telresources webview\
+	Stk TimeService UserDictionaryProvider Bluetooth BluetoothMidiService telresources webview SnapdragonCamera\
 
 local-phone-priv-apps :=AudioFX Shell FusedLocation ProxyHandler ExternalStorageProvider FMRadio\
 	SharedStorageBackup InputDevices CellBroadcastReceiver \
