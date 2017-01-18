@@ -1,4 +1,5 @@
 name="AudioFX.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
+name="AssistantFav.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="BackupRestoreConfirmation.apk" certificate="build/target/product/security/platform.x509.pem" private_key="build/target/product/security/platform.pk8"
 name="BaiduNetworkLocation.apk" certificate="PRESIGNED" private_key=""
 name="BasicDreams.apk" certificate="PRESIGNED" private_key=""

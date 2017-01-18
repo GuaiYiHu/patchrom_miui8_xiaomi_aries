@@ -2,6 +2,8 @@ system 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/build.prop 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/recovery-from-boot.bak 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/AssistantFav 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/app/AssistantFav/AssistantFav.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/BaiduNetworkLocation 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/BaiduNetworkLocation/BaiduNetworkLocation.apk 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/app/BasicDreams 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
